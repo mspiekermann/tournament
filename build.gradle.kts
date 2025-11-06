@@ -7,9 +7,9 @@ repositories {
 }
 
 dependencies {
-
+    implementation("org.xerial:sqlite-jdbc:3.51.0.0")
 }
 
 application {
-    mainClass = "JavalinApp"
+    mainClass = "Main"
 }
