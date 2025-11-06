@@ -28,7 +28,7 @@ public class TeamRepositoryTest {
 
         List<Team> teams = repo.findAll();
         assertEquals(2, teams.size());
-        assertEquals("Bayern", teams.get(0).name());
-        assertEquals("Real Madrid", teams.get(1).name());
+        assertEquals("Schalke 04", teams.get(0).name());
+        assertEquals("VFB Stuttgart", teams.get(1).name());
     }
 }
