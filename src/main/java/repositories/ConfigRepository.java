@@ -18,7 +18,7 @@ public class ConfigRepository {
         try (PreparedStatement ps = connection.prepareStatement(
                 "SELECT match_days, advance_count FROM config WHERE id = ?"
         )) {
-            ps.setInt(1, 1); //only one tournament for now
+            ps.setInt(1, 1);    // one tournament for now
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return new Config(rs.getInt("match_days"), rs.getInt("advance_count"));
@@ -35,7 +35,7 @@ public class ConfigRepository {
         )) {
             ps.setInt(1, matchDays);
             ps.setInt(2, advanceCount);
-            ps.setInt(3, 1); //only one tournament for now
+            ps.setInt(3, 1);    // one tournament for now
             ps.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Could not update config", e);
