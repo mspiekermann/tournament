@@ -75,4 +75,13 @@ public class MatchRepository {
         }
     }
 
+    public void deleteAll() {
+        try (Statement st = connection.createStatement()) {
+            st.executeUpdate("DELETE FROM match");
+        } catch (SQLException e) {
+            throw new RuntimeException("Could not clear matches", e);
+        }
+
+    }
+
 }

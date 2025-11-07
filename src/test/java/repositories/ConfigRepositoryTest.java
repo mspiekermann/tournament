@@ -1,13 +1,10 @@
 package repositories;
 
 import database.TestDatabaseUtil;
-import model.Config;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.sql.Connection;
 
 public class ConfigRepositoryTest {
 
