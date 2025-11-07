@@ -3,8 +3,7 @@ package repositories;
 import model.Config;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class ConfigRepository {
 
